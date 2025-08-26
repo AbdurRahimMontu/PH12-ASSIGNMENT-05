@@ -16,33 +16,34 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="w-[1200px] mx-auto mt-5">
-    <header class="border flex justify-between py-3">
-      <div class="logo flex justify-center items-center">
-        <img src="assets/logo.png" alt="" width="80px" />
-        <h2 class="font-bold">
+  <body class="mt-5">
+    <header>
+      <div  class="border flex justify-between py-3">
+        <div class="logo flex justify-center items-center gap-3">
+        <img src="assets/logo.png" alt="" width="40px" />
+        <h2 class="font-bold leading-4">
           Emergency <br />
           Service
         </h2>
       </div>
-
-      <div class="nav flex justify-center items-center gap-10">
-        <div class="flex items-center gap-2">
+                  <!-- Header Right Side -->
+      <div class="nav flex justify-center items-center gap-10 border">
+        <div class="flex items-center gap-2 bg-red-100 p-2 px-5">
           <span class="text-md font-bold">0</span>
           <img src="assets/heart.png" alt="" width="30px" />
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 bg-red-100 p-2 px-5">
           <span class="text-md font-bold">0</span>
           <img src="assets/coin.png" alt="" width="30px" />
         </div>
-        <button class="btn bg-[#00A63E]"><span>0</span> Copy</button>
+        <button class=" bg-[#00A63E]  px-5 py-3"><span>0</span> Copy</button>
       </div>
-    </header>
-    <main>
-      <section
-        class="banner flex flex-col gap-3 bg-[#00A63E] items-center p-10"
-      >
-        <div>
+      </div>
+         <!-- Header Right Side -->
+
+         <!-- Banner Section -->
+          <div class="banner banner flex flex-col gap-3 bg-[#00A63E] items-center p-10">
+       <div>
           <img src="assets/logo-dark.png" alt="" width="100px" />
         </div>
         <h1>জরুরি সেবা ডিরেক্টরি</h1>
@@ -50,263 +51,260 @@
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </h3>
-      </section>
-      <section
-        class="cart grid grid-cols-12 border border-red-600 bg-[#F5FFF6]"
-      >
-        <div
-          class="cart-container col-span-9 border border-green-600 flex flex-col gap-5"
-        >
+          </div>
+
+    </header>
+    <main class="w-[1200px] mx-auto ">
+ 
+      <section class="cart grid grid-cols-12 bg-[#F5FFF6] mt-5 gap-5">
+               <!-- Cart Box Start -->
+        <div class="cart-container col-span-9 flex flex-col gap-5">
           <div class="cart-box grid grid-cols-3 gap-5">
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+            <!-- // single cart 01 -->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
               <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
+                <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/emergency.png" alt="" width="25px" />
+                </div>
                 <img src="assets/heart.png" alt="" width="25px" />
               </div>
               <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
               <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
+              <h2 class="font-bold text-3xl">999</h2>
               <div>
                 <button class="btn">সার্বজনীন</button>
               </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
-              </div>
-            </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
 
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
-              <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
-                <img src="assets/heart.png" alt="" width="25px" />
-              </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
-              <div>
-                <button class="btn">সার্বজনীন</button>
-              </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
               </div>
             </div>
+           <!-- // single cart  02-->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
+              <div class="flex justify-between items-center">
+               <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/police.png" alt="" width="25px" />
+                </div>
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">পুলিশ</h3>
+              <h3>Police</h3>
+              <h2 class="font-bold text-3xl">999</h2>
+              <div>
+                <button class="btn">পুলিশ</button>
+              </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
 
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
-              <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
-                <img src="assets/heart.png" alt="" width="25px" />
-              </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
-              <div>
-                <button class="btn">সার্বজনীন</button>
-              </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
               </div>
             </div>
+           <!-- // single cart  03-->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
+              <div class="flex justify-between items-center">
+                 <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/fire-service.png" alt="" width="25px" />
+                </div>
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">ফায়ার সার্ভিস</h3>
+              <h3>Fire Service</h3>
+              <h2 class="font-bold text-3xl">999</h2>
+              <div>
+                <button class="btn">ফায়ার</button>
+              </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+                       <!-- // single cart  -->
           </div>
 
           <div class="cart-box grid grid-cols-3 gap-5">
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+                       <!-- // single cart  04-->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
               <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
+                 <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/ambulance.png" alt="" width="25px" />
+                </div>
                 <img src="assets/heart.png" alt="" width="25px" />
               </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
+              <h3 class="font-bold">অ্যাম্বুলেন্স</h3>
+              <h3>Ambulance</h3>
+              <h2 class="font-bold text-3xl">1994-999999</h2>
               <div>
-                <button class="btn">সার্বজনীন</button>
+                <button class="btn">স্বাস্থ্য</button>
               </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
-              </div>
-            </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
 
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
-              <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
-                <img src="assets/heart.png" alt="" width="25px" />
-              </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
-              <div>
-                <button class="btn">সার্বজনীন</button>
-              </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
               </div>
             </div>
+           <!-- // single cart 05 -->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
+              <div class="flex justify-between items-center">
+                <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/emergency.png" alt="" width="25px" />
+                </div>
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">নারী ও শিশু সহায়তা</h3>
+              <h3>Women & Child Helpline</h3>
+              <h2 class="font-bold text-3xl">109</h2>
+              <div>
+                <button class="btn">সহায়তা</button>
+              </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
 
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
-              <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
-                <img src="assets/heart.png" alt="" width="25px" />
-              </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
-              <div>
-                <button class="btn">সার্বজনীন</button>
-              </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
               </div>
             </div>
+           <!-- // single cart 06 -->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
+              <div class="flex justify-between items-center">
+                  <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/emergency.png" alt="" width="25px" />
+                </div>
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">দুদক</h3>
+              <h3>Anti-Corruption</h3>
+              <h2 class="font-bold text-3xl">106</h2>
+              <div>
+                <button class="btn">সরকারি</button>
+              </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+             <!-- // single cart  -->
           </div>
           <div class="cart-box grid grid-cols-3 gap-5">
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+                       <!-- // single cart 07 -->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
               <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
+             <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/fire-service.png" alt="" width="25px" />
+                </div>
                 <img src="assets/heart.png" alt="" width="25px" />
               </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
+              <h3 class="font-bold">বিদ্যুৎ বিভ্রাট</h3>
+              <h3>Electricity Outage</h3>
+              <h2 class="font-bold text-3xl">16216</h2>
               <div>
-                <button class="btn">সার্বজনীন</button>
+                <button class="btn">বিদ্যুৎ</button>
               </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
-              </div>
-            </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
 
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
-              <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
-                <img src="assets/heart.png" alt="" width="25px" />
-              </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
-              <div>
-                <button class="btn">সার্বজনীন</button>
-              </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
               </div>
             </div>
+           <!-- // single cart  08-->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
+              <div class="flex justify-between items-center">
+              <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/brac.png" alt="" width="25px" />
+                </div>
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">ব্র্যাক</h3>
+              <h3>Brac</h3>
+              <h2 class="font-bold text-3xl">16445</h2>
+              <div>
+                <button class="btn">এনজিও</button>
+              </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
 
-            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
-              <div class="flex justify-between items-center">
-                <img src="assets/emergency.png" alt="" width="25px" />
-                <img src="assets/heart.png" alt="" width="25px" />
-              </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
-              <h2 class="font-bold">999</h2>
-              <div>
-                <button class="btn">সার্বজনীন</button>
-              </div>
-              <div class="flex justify-between items-center">
-                <div>
-                  <button class="btn">
-                    <img src="assets/copy.png" alt="" /> Copy
-                  </button>
-                </div>
-                <div>
-                  <button class="bg-[#00A63E] btn">
-                    <img src="assets/call.png" alt="" /> Call
-                  </button>
-                </div>
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
               </div>
             </div>
+           <!-- // single cart  09-->
+            <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl ">
+              <div class="flex justify-between items-center">
+            <div class="bg-red-100 p-3 rounded-xl">
+                  <img src="assets/Bangladesh-Railway.png" alt="" width="25px"/>
+                </div>
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">বাংলাদেশ রেলওয়ে</h3>
+              <h3>Bangladesh Railway</h3>
+              <h2 class="font-bold text-3xl">163</h2>
+              <div>
+                <button class="btn">পরিবহন</button>
+              </div>
+              <div class="flex justify-between">
+                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+
+                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+                       <!-- // single cart  -->
           </div>
-   
         </div>
-      <div class="cart-display col-span-3">
-          <div class=" border-blue-600 flex justify-between items-center h-20 border">
-         
-            <div class="flex">
-            <div>
-                  <img class="bg-" src="assets/clock.png" alt="" />
-            </div>
-              <p>Call History</p>
+        <!-- Cart Box End -->
+
+        <!-- Cart History Start -->
+        <div class="cart-display col-span-3 bg-white ">
+                      
+          <div class="border-blue-600 flex justify-between items-center h-20 border px-4">
+            <div class="flex justify-between items-center gap-1">
+             <i class="fa-solid fa-clock"></i>
+             <p class="font-bold">Call History</p>
             </div>
 
             <div>
-              <button class="btn bg-[#00A63E]">Clear</button>
+                <button class="bg-[#00A63E] btn text-white w-[80px]">
+                Clear
+                </button>
             </div>
-         
+          </div>
+          <div class="px-4">history</div>
         </div>
-       <div>
-        history
-       </div>
-      </div>
       </section>
     </main>
     <footer class="mb-10">footer</footer>
