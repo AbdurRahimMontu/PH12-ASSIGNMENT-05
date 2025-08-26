@@ -1,49 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5"  type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="w-[1200px] mx-auto mt-5">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-[1200px] mx-auto mt-5">
     <header class="border flex justify-between py-3">
       <div class="logo flex justify-center items-center">
-        <img src="assets/logo.png" alt="" width="80px">
-        <h2 class="font-bold">Emergency <br> Service</h2>
+        <img src="assets/logo.png" alt="" width="80px" />
+        <h2 class="font-bold">
+          Emergency <br />
+          Service
+        </h2>
       </div>
-            
-               
+
       <div class="nav flex justify-center items-center gap-10">
-       <div class="flex  items-center gap-2">
-        <span class="text-md font-bold">0</span>
-        <img src="assets/heart.png" alt="" width="30px">
-       </div>
-          <div class="flex items-center gap-2">
-             <span class="text-md font-bold">0</span>
-                <img src="assets/coin.png" alt="" width="30px">
-          </div>
-       <button class="btn bg-[#00A63E]"><span>0</span> Copy</button>
+        <div class="flex items-center gap-2">
+          <span class="text-md font-bold">0</span>
+          <img src="assets/heart.png" alt="" width="30px" />
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-md font-bold">0</span>
+          <img src="assets/coin.png" alt="" width="30px" />
+        </div>
+        <button class="btn bg-[#00A63E]"><span>0</span> Copy</button>
       </div>
-         
-       
     </header>
     <main>
-        <section class="banner flex flex-col gap-3 bg-[#00A63E] items-center p-10">
-            <div>
-                <img src="assets/logo-dark.png" alt="" width="100px">
+      <section
+        class="banner flex flex-col gap-3 bg-[#00A63E] items-center p-10"
+      >
+        <div>
+          <img src="assets/logo-dark.png" alt="" width="100px" />
+        </div>
+        <h1>জরুরি সেবা ডিরেক্টরি</h1>
+        <h3>
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </h3>
+      </section>
+      <section
+        class="cart grid grid-cols-12 border border-red-600 bg-[#F5FFF6]"
+      >
+        <div
+          class="cart-container col-span-9 border border-green-600 flex flex-col gap-5"
+        >
+          <div class="cart-box grid grid-cols-3 gap-5">
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
             </div>
-            <h1>জরুরি সেবা ডিরেক্টরি</h1>
-            <h3>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</h3>
-        </section>
+
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-box grid grid-cols-3 gap-5">
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-box grid grid-cols-3 gap-5">
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-cart bg-white p-5 border flex flex-col gap-5">
+              <div class="flex justify-between items-center">
+                <img src="assets/emergency.png" alt="" width="25px" />
+                <img src="assets/heart.png" alt="" width="25px" />
+              </div>
+              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h3>National Emergency</h3>
+              <h2 class="font-bold">999</h2>
+              <div>
+                <button class="btn">সার্বজনীন</button>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <button class="btn">
+                    <img src="assets/copy.png" alt="" /> Copy
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-[#00A63E] btn">
+                    <img src="assets/call.png" alt="" /> Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+   
+        </div>
+      <div class="cart-display col-span-3">
+          <div class=" border-blue-600 flex justify-between items-center h-20 border">
+         
+            <div class="flex">
+            <div>
+                  <img class="bg-" src="assets/clock.png" alt="" />
+            </div>
+              <p>Call History</p>
+            </div>
+
+            <div>
+              <button class="btn bg-[#00A63E]">Clear</button>
+            </div>
+         
+        </div>
+       <div>
+        history
+       </div>
+      </div>
+      </section>
     </main>
-    <footer></footer>
-
-
+    <footer class="mb-10">footer</footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
