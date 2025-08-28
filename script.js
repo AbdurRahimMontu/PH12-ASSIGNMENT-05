@@ -45,24 +45,34 @@ document
   .addEventListener("click", function (e) {
     if (e.target.className.includes("call-btn")) {
       const callBtn = e.target;
-
+        
       // callBtn.style.color = "red";
       const coinBox = document.getElementById("coin-box");
 
       let coinBoxValue = Number(coinBox.innerText);
-      console.log(coinBoxValue);
+       
       if (coinBoxValue >= 20) {
         const totalValue = coinBoxValue - 20;
         document.getElementById("coin-box").innerText = totalValue;
       } else {
-        console.log("Invalid");
+        alert("❌ আপনার পর্যাপ্ত কয়েন নেই কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
+        return;
       }
 
-     const historyText = (callBtn.parentNode.parentNode.children[2].innerText);
+ const serviceName = (callBtn.parentNode.parentNode.children[2].innerText);
+        const serviceNumber = (callBtn.parentNode.parentNode.children[3].innerText);
+        alert(`📞 Calling ${serviceName} ${serviceNumber}...`);
+
+
+
+     const historyText = (callBtn.parentNode.parentNode.children[1].innerText);
      const historyNumber = (callBtn.parentNode.parentNode.children[3].innerText);
 
       const historyDetails = document.getElementById("history-details");
       const newDiv = document.createElement("div");
+      if (coinBoxValue >= 20) {
+
+      }
       newDiv.innerHTML = `
             <div class="bg-gray-200 p-4 mb-1">
                 <div class="flex justify-between">
@@ -76,20 +86,10 @@ document
     }
   });
 
-
-//  <script>
-//     function copyText() {
-//       // Get the text from the h3 element
-//       const text = document.getElementById("myHeading").innerText;
-
-//       // Use the Clipboard API
-//       navigator.clipboard.writeText(text)
-//         .then(() => {
-//           alert("copy number : " + text); // feedback to user
-//         })
-//         .catch(err => {
-//           alert("Failed to copy text!");
-//           console.error(err);
-//         });
-//     }
-//   </script>
+// clear btn 
+document.getElementById("clear-btn").addEventListener("click", function(){
+        const historyDetails = document.getElementById("history-details");
+        historyDetails.innerText = "";
+      const coinBox = document.getElementById("coin-box");
+    coinBox.innerText = "100";
+})
