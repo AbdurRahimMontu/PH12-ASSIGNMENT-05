@@ -74,12 +74,12 @@ document
 
       }
       newDiv.innerHTML = `
-            <div class="bg-gray-200 p-4 mb-1">
-                <div class="flex justify-between">
+            <div class="bg-gray-200 p-4 mt-1 flex justify-between items-center">
+                <div class="">
                 <h3 class="">${historyText}  </h3>
-                <h3>${new Date().toLocaleTimeString()}</h3>
+               <h4>${historyNumber}</h4>
                 </div>
-                <h4>${historyNumber}</h4>
+                 <h3>${new Date().toLocaleTimeString()}</h3>
                </div>
       `;
       historyDetails.appendChild(newDiv)
@@ -92,4 +92,8 @@ document.getElementById("clear-btn").addEventListener("click", function(){
         historyDetails.innerText = "";
       const coinBox = document.getElementById("coin-box");
     coinBox.innerText = "100";
+       const heartRed = document.getElementById("heart-red");
+      heartRed.innerText = "0"; 
+      const copyGreen = document.getElementById("copy-green");
+      copyGreen.innerText = "0"
 })
