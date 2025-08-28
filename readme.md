@@ -9,11 +9,11 @@
        querySelectorAll = dom all multiple elements selector and returns node lists .  
 2. How do you **create and insert a new element into the DOM**?  
   Ans:First, the parent element select, then create an element and innerText inside, and  parent element appendChild into create element.
-3. What is **Event Bubbling** and how does it work?
+3. What is **Event Bubbling** and how does it work?  
   Ans:Event Bubbling = event bubbling is a dom event trigger. event bubbling working child to parent.
-4. What is **Event Delegation** in JavaScript? Why is it useful?
+4. What is **Event Delegation** in JavaScript? Why is it useful?  
   Ans:Event Delegation =  event delegation is a dom event trigger. Because one event delegation multiple event control.
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+5. What is the difference between **preventDefault() and stopPropagation()** methods?  
   Ans:preventDefault() = from submit after reload stop
       stopPropagation() = event bubble stop
 
