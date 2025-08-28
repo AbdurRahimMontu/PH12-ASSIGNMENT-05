@@ -75,11 +75,11 @@ document
       }
       newDiv.innerHTML = `
             <div class="bg-gray-200 p-2 mt-1 flex justify-between items-center mx-2">
-                <div class="">
+                <div class="font-bold">
                 <h3 class="">${historyText}  </h3>
-               <h4>${historyNumber}</h4>
+               <h4 class="">${historyNumber}</h4>
                 </div>
-                 <h3>${new Date().toLocaleTimeString()}</h3>
+                 <h3 class="font-bold">${new Date().toLocaleTimeString()}</h3>
                </div>
       `;
       historyDetails.appendChild(newDiv)
