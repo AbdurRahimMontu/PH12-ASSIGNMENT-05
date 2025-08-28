@@ -74,7 +74,7 @@ document
 
       }
       newDiv.innerHTML = `
-            <div class="bg-gray-200 p-4 mt-1 flex justify-between items-center">
+            <div class="bg-gray-200 p-2 mt-1 flex justify-between items-center mx-2">
                 <div class="">
                 <h3 class="">${historyText}  </h3>
                <h4>${historyNumber}</h4>

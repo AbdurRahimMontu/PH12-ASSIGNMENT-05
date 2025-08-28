@@ -3,328 +3,409 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Emergency-Hotline</title>
+    <!-- Daisy ui cdn -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       type="text/css"
     />
+    <!-- font-awesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
+    <!-- tailwindcss cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="">
     <header>
-      <div  class=" justify-between py-5 xl:flex mx-auto xl:w-6xl w-sm ">
+      <!-- Navbar Section -->
+      <nav class="justify-between py-5 xl:flex mx-auto xl:w-6xl w-sm">
         <div class="logo flex justify-center items-center gap-3">
-        <img src="assets/logo.png" alt="" width="40px" />
-        <h2 class="font-extrabold text-xl leading-5 text-green-800">
-          Emergency <br />
-          Service
-        </h2>
-      </div>
-                  <!-- Header Right Side -->
-      <div class="nav flex justify-center items-center gap-5 ">
-        <div class="flex items-center gap-2 bg-green-100 p-2 px-7 rounded-3xl">
-          <span id="heart-red" class="text-md font-bold">0</span>
-          <img src="assets/heart.png" alt="" width="30px"/>
+          <img src="assets/logo.png" alt="" width="40px" />
+          <h2 class="font-extrabold text-xl leading-5 text-green-800">
+            Emergency <br />
+            Service
+          </h2>
         </div>
-        <div class="flex items-center gap-2 bg-green-100 p-2 px-7 rounded-3xl">
-          <span id="coin-box" class="text-md font-bold">100</span>
-          <img src="assets/coin.png" alt="" width="30px" />
+        <!-- Navbar Right Side -->
+        <div class="nav flex justify-center items-center gap-5">
+          <div
+            class="flex items-center gap-2 bg-green-100 p-2 px-7 rounded-3xl"
+          >
+            <span id="heart-red" class="text-md font-bold">0</span>
+            <img src="assets/heart.png" alt="" width="30px" />
+          </div>
+          <div
+            class="flex items-center gap-2 bg-green-100 p-2 px-7 rounded-3xl"
+          >
+            <span id="coin-box" class="text-md font-bold">100</span>
+            <img src="assets/coin.png" alt="" width="30px" />
+          </div>
+          <button
+            class="bg-[#00A63E] font-semibold text-white rounded-3xl px-7 py-3"
+          >
+            <span id="copy-green">0</span> Copy
+          </button>
         </div>
-        <button class=" bg-[#00A63E] font-semibold text-white rounded-3xl px-7 py-3"><span id="copy-green">0</span> Copy</button>
-      </div>
-      </div>
-<!-- Header Right Side End -->
-
-         <!-- Banner Section -->
-
-
-          <div class="banner banner flex flex-col gap-3 bg-gradient-to-r from-green-950 via-green-700 to-green-950 items-center p-10 ">
-       <div>
+      </nav>
+      <!-- Navbar Section End -->
+      <!-- Hero Section Start -->
+      <div
+        class="banner banner flex flex-col gap-3 bg-gradient-to-r from-green-950 via-green-700 to-green-950 items-center p-10"
+      >
+        <div>
           <img src="assets/logo-dark.png" alt="" width="100px" />
         </div>
         <h1 class="text-5xl font-semibold text-white">জরুরি সেবা ডিরেক্টরি</h1>
-        <h3 class="text-center text-xl font-semibold text-white">
+        <p class="text-center text-xl font-semibold text-white">
           Government Emergency Services at Your Fingertip A Project by
           Government of the People's Republic of Bangladesh
-        </h3>
-          </div>
-
+        </p>
+      </div>
+      <!-- Hero Section End  -->
     </header>
     <main class="xl:w-6xl w-sm mx-auto mb-5">
- 
-      <section class="cart grid xl:grid-cols-12  bg-[#F5FFF6] mt-5 gap-5 grid-cols-3">
-               <!-- Cart Box Start -->
-        <div id="cart-container" class="xl:col-span-9 col-span-3 flex flex-col gap-5 " >
-          <div class="cart-box grid  xl:grid-cols-3 grid-cols-1 gap-5 ">
+      <section
+        class="cart grid xl:grid-cols-12 bg-[#F5FFF6] mt-5 gap-5 grid-cols-3"
+      >
+        <!-- Cart Container Section Start -->
+        <div
+          id="cart-container"
+          class="xl:col-span-9 col-span-3 flex flex-col gap-5"
+        >
+        <!-- single cart box 01 -->
+          <div class="cart-box grid xl:grid-cols-3 grid-cols-1 gap-5">
             <!-- // single cart 01 -->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl ">
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
                 <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/emergency.png" alt="" width="25px" />
                 </div>
-
-
-
-               <i  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
-           
-              
-
-
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
+              <h2 class="font-bold">জাতীয় জরুরি সেবা</h2>
               <h3 class="main-title">National Emergency</h3>
-              <h2 class="font-bold text-3xl">999</h2>
+              <h4 class="font-bold text-3xl">999</h4>
               <div>
                 <button class="btn rounded-full">সার্বজনীন</button>
               </div>
               <div class="flex justify-between">
-                <button  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg  btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-           <!-- // single cart  02-->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl">
+            <!-- // single cart  02-->
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
-               <div class=" bg-[#DFEFFF] p-3 rounded-xl">
+                <div class="bg-[#DFEFFF] p-3 rounded-xl">
                   <img src="assets/police.png" alt="" width="25px" />
                 </div>
-                 <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold">পুলিশ</h3>
+              <h2 class="font-bold">পুলিশ</h2>
               <h3>Police</h3>
-              <h2 class="font-bold copy-number text-3xl">999</h2>
+              <h4 class="font-bold copy-number text-3xl">999</h4>
               <div>
                 <button class="btn rounded-full">পুলিশ</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-           <!-- // single cart  03-->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl">
+            <!-- // single cart  03-->
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
-                 <div class="bg-red-100 p-3 rounded-xl">
+                <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/fire-service.png" alt="" width="25px" />
                 </div>
-                <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold ">ফায়ার সার্ভিস</h3>
+              <h2 class="font-bold">ফায়ার সার্ভিস</h2>
               <h3>Fire Service</h3>
-              <h2 class="font-bold text-3xl">999</h2>
+              <h4 class="font-bold text-3xl">999</h4>
               <div>
                 <button class="btn rounded-full">ফায়ার</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-                       <!-- // single cart  -->
+            <!-- // single cart  -->
           </div>
-
+           <!-- single cart box 02 -->
           <div class="cart-box grid xl:grid-cols-3 grid-cols-1 gap-5">
-                       <!-- // single cart  04-->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl">
+            <!-- // single cart  04-->
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
-                 <div class="bg-red-100 p-3 rounded-xl">
+                <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/ambulance.png" alt="" width="25px" />
                 </div>
-                 <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold">অ্যাম্বুলেন্স</h3>
+              <h2 class="font-bold">অ্যাম্বুলেন্স</h2>
               <h3>Ambulance</h3>
-              <h2 class="font-bold text-3xl">1994-999999</h2>
+              <h4 class="font-bold text-3xl">1994-999999</h4>
               <div>
                 <button class="btn rounded-full">স্বাস্থ্য</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-           <!-- // single cart 05 -->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl">
+            <!-- // single cart 05 -->
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
                 <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/emergency.png" alt="" width="25px" />
                 </div>
-                <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold">নারী ও শিশু সহায়তা</h3>
+              <h2 class="font-bold">নারী ও শিশু সহায়তা</h2>
               <h3>Women & Child Helpline</h3>
-              <h2 class="font-bold text-3xl">109</h2>
+              <h4 class="font-bold text-3xl">109</h4>
               <div>
                 <button class="btn rounded-full">সহায়তা</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-           <!-- // single cart 06 -->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl">
+            <!-- // single cart 06 -->
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
-                  <div class="bg-red-100 p-3 rounded-xl">
+                <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/emergency.png" alt="" width="25px" />
                 </div>
-               <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold">দুদক</h3>
+              <h2 class="font-bold">দুদক</h2>
               <h3>Anti-Corruption</h3>
-              <h2 class="font-bold text-3xl">106</h2>
+              <h4 class="font-bold text-3xl">106</h4>
               <div>
                 <button class="btn rounded-full">সরকারি</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-             <!-- // single cart  -->
+            <!-- // single cart  -->
           </div>
+           <!-- single cart box 03 -->
           <div class="cart-box grid xl:grid-cols-3 grid-cols-1 gap-5">
-                       <!-- // single cart 07 -->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl">
+            <!-- // single cart 07 -->
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
-             <div class="bg-red-100 p-3 rounded-xl">
+                <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/fire-service.png" alt="" width="25px" />
                 </div>
-            <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold">বিদ্যুৎ বিভ্রাট</h3>
+              <h2 class="font-bold">বিদ্যুৎ বিভ্রাট</h2>
               <h3>Electricity Outage</h3>
-              <h2 class="font-bold text-3xl">16216</h2>
+              <h4 class="font-bold text-3xl">16216</h4>
               <div>
                 <button class="btn rounded-full">বিদ্যুৎ</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-           <!-- // single cart  08-->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl">
+            <!-- // single cart  08-->
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
-              <div class="bg-red-100 p-3 rounded-xl">
+                <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/brac.png" alt="" width="25px" />
                 </div>
-               <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold">ব্র্যাক</h3>
+              <h2 class="font-bold">ব্র্যাক</h2>
               <h3>Brac</h3>
-              <h2 class="font-bold text-3xl">16445</h2>
+              <h4 class="font-bold text-3xl">16445</h4>
               <div>
                 <button class="btn rounded-full">এনজিও</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-           <!-- // single cart  09-->
-            <div class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl ">
+            <!-- // single cart  09-->
+            <div
+              class="single-cart rounded-xl bg-white p-4 flex flex-col gap-4 shadow-xl"
+            >
               <div class="flex justify-between items-center">
-            <div class="bg-red-100 p-3 rounded-xl">
-                  <img src="assets/Bangladesh-Railway.png" alt="" width="25px"/>
+                <div class="bg-red-100 p-3 rounded-xl">
+                  <img
+                    src="assets/Bangladesh-Railway.png"
+                    alt=""
+                    width="25px"
+                  />
                 </div>
-               <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+                <i
+                  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"
+                ></i>
               </div>
-              <h3 class="font-bold">বাংলাদেশ রেলওয়ে</h3>
+              <h2 class="font-bold">বাংলাদেশ রেলওয়ে</h2>
               <h3>Bangladesh Railway</h3>
-              <h2 class="font-bold text-3xl">163</h2>
+              <h4 class="font-bold text-3xl">163</h4>
               <div>
                 <button class="btn rounded-full">পরিবহন</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]">
+                <button
+                  class="btn copy-btn rounded-lg hover:bg-black hover:text-white w-[120px]"
+                >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]">
+                <button
+                  class="bg-[#00A63E] rounded-lg btn call-btn text-white w-[120px]"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
-                       <!-- // single cart  -->
+            <!-- // single cart  -->
           </div>
         </div>
-        <!-- Cart Box End -->
+        <!-- Cart Container  End -->
 
-        <!-- Cart History Start -->
-        <div class="cart-display col-span-3 bg-white xl:col-span-3 rounded-lg  shadow-xl">
-                      
-          <div class=" flex justify-between items-center h-20  px-4">
+        <!-- Cart History Section Start -->
+        <div
+          class="cart-display col-span-3 bg-white xl:col-span-3 rounded-lg shadow-xl"
+        >
+          <div class="flex justify-between items-center h-20 px-4">
             <div class="flex justify-between items-center gap-1">
-             <i class="fa-solid fa-clock"></i>
-             <p class="font-bold">Call History</p>
+              <i class="fa-solid fa-clock"></i>
+              <h2 class="font-bold">Call History</h2>
             </div>
 
             <div>
-                <button id="clear-btn" class="bg-[#00A63E]  btn rounded-xl text-white w-[80px]">
+              <button
+                id="clear-btn"
+                class="bg-[#00A63E] btn rounded-xl text-white w-[80px]"
+              >
                 Clear
-                </button>
+              </button>
             </div>
           </div>
-          <div id="history-details" class="">
-         
-
-          </div>
+          <div id="history-details" class=""></div>
         </div>
+                <!-- Cart History Section End -->
       </section>
     </main>
-  
-
     <script src="script.js"></script>
   </body>
 </html>
-
- 
-
- 
