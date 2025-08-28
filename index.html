@@ -16,33 +16,35 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="mt-5">
+  <body class="">
     <header>
-      <div  class="border flex justify-between py-3">
+      <div  class=" flex justify-between py-3 w-[1200px] mx-auto">
         <div class="logo flex justify-center items-center gap-3">
         <img src="assets/logo.png" alt="" width="40px" />
-        <h2 class="font-bold leading-4">
+        <h2 class="font-bold leading-4 text-green-700">
           Emergency <br />
           Service
         </h2>
       </div>
                   <!-- Header Right Side -->
-      <div class="nav flex justify-center items-center gap-10 border">
-        <div class="flex items-center gap-2 bg-red-100 p-2 px-5">
-          <span class="text-md font-bold">0</span>
-          <img src="assets/heart.png" alt="" width="30px" />
+      <div class="nav flex justify-center items-center gap-5 ">
+        <div class="flex items-center gap-2 bg-green-100 p-2 px-7 rounded-3xl">
+          <span id="heart-red" class="text-md font-bold">0</span>
+          <img src="assets/heart.png" alt="" width="30px"/>
         </div>
-        <div class="flex items-center gap-2 bg-red-100 p-2 px-5">
-          <span class="text-md font-bold">0</span>
+        <div class="flex items-center gap-2 bg-green-100 p-2 px-7 rounded-3xl">
+          <span id="coin-box" class="text-md font-bold">100</span>
           <img src="assets/coin.png" alt="" width="30px" />
         </div>
-        <button class=" bg-[#00A63E]  px-5 py-3"><span>0</span> Copy</button>
+        <button class=" bg-[#00A63E] rounded-3xl px-7 py-3"><span id="copy-green">0</span> Copy</button>
       </div>
       </div>
-         <!-- Header Right Side -->
+<!-- Header Right Side End -->
 
          <!-- Banner Section -->
-          <div class="banner banner flex flex-col gap-3 bg-[#00A63E] items-center p-10">
+
+
+          <div class="banner banner flex flex-col gap-3 bg-gradient-to-r from-green-950 via-green-400 to-green-950 items-center p-10">
        <div>
           <img src="assets/logo-dark.png" alt="" width="100px" />
         </div>
@@ -58,28 +60,39 @@
  
       <section class="cart grid grid-cols-12 bg-[#F5FFF6] mt-5 gap-5">
                <!-- Cart Box Start -->
-        <div class="cart-container col-span-9 flex flex-col gap-5">
-          <div class="cart-box grid grid-cols-3 gap-5">
+        <div id="cart-container" class="col-span-9 flex flex-col gap-5 " >
+          <div class="cart-box grid grid-cols-3 gap-5 border">
             <!-- // single cart 01 -->
             <div class="single-cart bg-white p-4 flex flex-col gap-4 shadow-xl">
               <div class="flex justify-between items-center">
                 <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/emergency.png" alt="" width="25px" />
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+
+
+
+               <i  class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
+           
+              
+ <!-- h3 field -->
+  <!-- <h3 id="myHeading">999</h3> -->
+
+  <!-- Button -->
+  <!-- <button onclick="copyText()">Copy</button> -->
+
               </div>
               <h3 class="font-bold">জাতীয় জরুরি সেবা</h3>
-              <h3>National Emergency</h3>
+              <h3 class="main-title">National Emergency</h3>
               <h2 class="font-bold text-3xl">999</h2>
               <div>
                 <button class="btn">সার্বজনীন</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button  class="btn copy-btn hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -90,20 +103,20 @@
                <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/police.png" alt="" width="25px" />
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+                 <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
               </div>
               <h3 class="font-bold">পুলিশ</h3>
               <h3>Police</h3>
-              <h2 class="font-bold text-3xl">999</h2>
+              <h2 class="font-bold copy-number text-3xl">999</h2>
               <div>
                 <button class="btn">পুলিশ</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button class="btn copy-btn hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -114,7 +127,7 @@
                  <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/fire-service.png" alt="" width="25px" />
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+                <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
               </div>
               <h3 class="font-bold">ফায়ার সার্ভিস</h3>
               <h3>Fire Service</h3>
@@ -123,11 +136,11 @@
                 <button class="btn">ফায়ার</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button class="btn copy-btn hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -142,7 +155,7 @@
                  <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/ambulance.png" alt="" width="25px" />
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+                 <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
               </div>
               <h3 class="font-bold">অ্যাম্বুলেন্স</h3>
               <h3>Ambulance</h3>
@@ -151,11 +164,11 @@
                 <button class="btn">স্বাস্থ্য</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button class="btn copy-btn hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -166,7 +179,7 @@
                 <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/emergency.png" alt="" width="25px" />
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+                <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
               </div>
               <h3 class="font-bold">নারী ও শিশু সহায়তা</h3>
               <h3>Women & Child Helpline</h3>
@@ -175,11 +188,11 @@
                 <button class="btn">সহায়তা</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button class="btn copy-btn hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -190,7 +203,7 @@
                   <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/emergency.png" alt="" width="25px" />
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+               <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
               </div>
               <h3 class="font-bold">দুদক</h3>
               <h3>Anti-Corruption</h3>
@@ -199,11 +212,11 @@
                 <button class="btn">সরকারি</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button class="btn copy-btn  hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -217,7 +230,7 @@
              <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/fire-service.png" alt="" width="25px" />
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+            <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
               </div>
               <h3 class="font-bold">বিদ্যুৎ বিভ্রাট</h3>
               <h3>Electricity Outage</h3>
@@ -226,11 +239,11 @@
                 <button class="btn">বিদ্যুৎ</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button class="btn copy-btn hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -241,7 +254,7 @@
               <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/brac.png" alt="" width="25px" />
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+               <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
               </div>
               <h3 class="font-bold">ব্র্যাক</h3>
               <h3>Brac</h3>
@@ -250,11 +263,11 @@
                 <button class="btn">এনজিও</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button class="btn copy-btn hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -265,7 +278,7 @@
             <div class="bg-red-100 p-3 rounded-xl">
                   <img src="assets/Bangladesh-Railway.png" alt="" width="25px"/>
                 </div>
-                <img src="assets/heart.png" alt="" width="25px" />
+               <i class="fa-regular fa-heart text-2xl cursor-pointer heart-icon"></i>
               </div>
               <h3 class="font-bold">বাংলাদেশ রেলওয়ে</h3>
               <h3>Bangladesh Railway</h3>
@@ -274,11 +287,11 @@
                 <button class="btn">পরিবহন</button>
               </div>
               <div class="flex justify-between">
-                <button class="btn hover:bg-black hover:text-white w-[120px]">
+                <button class="btn copy-btn hover:bg-black hover:text-white w-[120px]">
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
 
-                <button class="bg-[#00A63E] btn text-white w-[120px]">
+                <button class="bg-[#00A63E] btn call-btn text-white w-[120px]">
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -303,12 +316,19 @@
                 </button>
             </div>
           </div>
-          <div class="px-4">history</div>
+          <div id="history-details" class="">
+         
+
+          </div>
         </div>
       </section>
     </main>
-    <footer class="mb-10">footer</footer>
+  
 
     <script src="script.js"></script>
   </body>
 </html>
+
+ 
+
+ 
